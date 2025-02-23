@@ -2,4 +2,4 @@
 
 namespace RPurinton\Exceptions;
 
-class WebhookValidationException extends \ArgumentException {}
+class WebhookValidationException extends \InvalidArgumentException {}
