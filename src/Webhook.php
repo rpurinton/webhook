@@ -24,7 +24,7 @@ class Webhook
                 return self::post($url, $body);
             }
         } catch (\Exception $e) {
-            $result = $e->getMessage();
+            error_log($e->getMessage());
         }
         return $result;
     }
