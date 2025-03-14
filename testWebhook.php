@@ -6,4 +6,5 @@ use RPurinton\Webhook;
 require __DIR__ . '/vendor/autoload.php';
 
 $url = getenv('WEBHOOK_TEST_URL');
-while(true) echo Webhook::post($url, ['content' => 'testWebhook Successful']);
+if(Webhook::post($url, ['content' => 'testWebhook Successful'])) echo "Success\n";
+else echo("Failure :(...");
