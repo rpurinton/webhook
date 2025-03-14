@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "rpurinton/https",
-            "version": "1.0.20",
+            "version": "1.0.26",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rpurinton/https.git",
-                "reference": "fc00fe443f9f3e240192ab2c9e68662345d53a34"
+                "reference": "e4cbd8e04b1f4e3ee02212de13c9fa9dcdfc76da"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rpurinton/https/zipball/fc00fe443f9f3e240192ab2c9e68662345d53a34",
-                "reference": "fc00fe443f9f3e240192ab2c9e68662345d53a34",
+                "url": "https://api.github.com/repos/rpurinton/https/zipball/e4cbd8e04b1f4e3ee02212de13c9fa9dcdfc76da",
+                "reference": "e4cbd8e04b1f4e3ee02212de13c9fa9dcdfc76da",
                 "shasum": ""
             },
             "require": {
@@ -43,9 +43,9 @@
             "description": "Abstract Static Class for making HTTPS Requests in PHP/Composer",
             "support": {
                 "issues": "https://github.com/rpurinton/https/issues",
-                "source": "https://github.com/rpurinton/https/tree/1.0.20"
+                "source": "https://github.com/rpurinton/https/tree/1.0.26"
             },
-            "time": "2025-03-14T20:52:42+00:00"
+            "time": "2025-03-14T21:13:46+00:00"
         }
     ],
     "packages-dev": [],
