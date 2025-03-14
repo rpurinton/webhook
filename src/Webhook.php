@@ -11,11 +11,16 @@ class Webhook
     {
         WebhookValidators::validateUrl($url);
         WebhookValidators::validateBody($body);
-        return HTTPS::request([
+        $result = json_decode(HTTPS::request([
             'url' => $url,
             'method' => 'POST',
             'headers' => ["Content-Type: application/json;"],
             'body' => json_encode($body)
-        ]);
+        ]), true);
+        if (isset($result['retry_after'])) {
+            usleep($result['retry_after']);
+            return self::post($url, $body);
+        }
+        return $result;
     }
 }
