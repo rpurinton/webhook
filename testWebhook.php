@@ -5,5 +5,5 @@ use RPurinton\Webhook;
 
 require __DIR__ . '/vendor/autoload.php';
 
-$url = getenv('LOG_FILE');
+$url = getenv('WEBHOOK_TEST_URL');
 echo Webhook::post($url, ['content' => 'testWebhook Successful']);
